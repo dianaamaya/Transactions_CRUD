@@ -7,9 +7,9 @@ This application allows users to create/read/update/delete/search/balance transa
 * A MySQL database connection is required
 
 ```
-git clone git@github.com:dianaamaya/Transactions_CRUD.git
-cd Transactions_CRUD/server - install/run it
-cd Transactions_CRUD/client
+git clone git@github.com:dianaamaya/Transactions_CRUD_REACTJS_JAVA_MYSQL.git
+cd Transactions_CRUD_REACTJS_JAVA_MYSQL/server - install/run it
+cd Transactions_CRUD_REACTJS_JAVA_MYSQL/client
 yarn install
 yarn start
 ```
