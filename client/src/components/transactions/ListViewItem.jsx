@@ -5,7 +5,6 @@ import { ReactComponent as IconUpdate } from '../../assets/update.svg'
 import { ReactComponent as IconTrash } from '../../assets/trash.svg'
 
 export const ListViewItem = memo(function ListViewItem ({ transaction, handleUpdateButton, handleDeleteButton }) {
-  console.log('render list item', transaction.id)
   return (
     <tr
             key={transaction.id}
@@ -39,14 +38,14 @@ export const ListViewItem = memo(function ListViewItem ({ transaction, handleUpd
             <td className="p-2 order-first">
               <div className="mt-4 text-white flex gap-3 justify-end md:justify-center items-start">
                 <button
-                  className="flex justify-center items-center bg-sky-600 text-sm px-4 py-2 md:px-2 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+                  className="button-update flex justify-center items-center bg-sky-600 text-sm px-4 py-2 md:px-2 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
                   onClick={() => handleUpdateButton(transaction)}
                 >
                   <IconUpdate className="w-4 inline-block" />
                   <span className="md:hidden inline-block pl-2">Update</span>
                 </button>
                 <button
-                  className="flex justify-center items-center bg-rose-800 text-sm px-4 py-2 md:px-2 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+                  className="button-delete flex justify-center items-center bg-rose-800 text-sm px-4 py-2 md:px-2 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
                   onClick={() => handleDeleteButton(transaction)}
                 >
                   <IconTrash className="w-4 inline-block" />

@@ -7,7 +7,6 @@ import { useTransactions } from '../../context/TransactionsContext'
 export function ModalDelete ({ handleCloseModal, transactionId }) {
   const { deleteTransaction } = useTransactions()
 
-  console.log('render modal delete')
   const handleDelete = () => {
     deleteTransaction(transactionId)
     handleCloseModal()
@@ -15,7 +14,7 @@ export function ModalDelete ({ handleCloseModal, transactionId }) {
 
   return (
     <>
-      <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+      <div className="delete-modal justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
         <div className="relative w-auto my-6 mx-auto max-w-xl p-2">
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
             <div className="flex items-start justify-between gap-6 p-6 rounded-t">
@@ -36,14 +35,14 @@ export function ModalDelete ({ handleCloseModal, transactionId }) {
 
             <div className="flex items-center justify-end border-solid border-slate-200 rounded-b p-6 pt-0">
               <button
-                className="bg-gray-200 text-sm px-4 py-2 rounded-md outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150"
+                className="button-cancel bg-gray-200 text-sm px-4 py-2 rounded-md outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150"
                 type="button"
                 onClick={() => handleCloseModal()}
               >
                 Cancel
               </button>
               <button
-                className="bg-rose-800 text-white text-sm px-4 py-2 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+                className="button-delete bg-rose-800 text-white text-sm px-4 py-2 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
                 onClick={handleDelete}
               >
                 <IconTrash className="w-6 inline-block pr-2" />

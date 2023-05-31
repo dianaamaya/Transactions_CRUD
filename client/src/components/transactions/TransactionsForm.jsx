@@ -12,7 +12,6 @@ const defaultValues = {
   address: null,
   description: null
 }
-console.log('create transaction form')
 
 export function TransactionsForm ({
   transactionToUpdate,
@@ -128,14 +127,14 @@ export function TransactionsForm ({
           ? (
           <div className="flex items-center justify-end border-solid border-slate-200 rounded-b mt-8 pt-6">
             <button
-              className="bg-gray-200 text-sm px-4 py-2 rounded-md outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150"
+              className="button-cancel <bg-gray-200 text-sm px-4 py-2 rounded-md outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150"
               type="button"
               onClick={() => handleCloseModal()}
             >
               Cancel
             </button>
             <button
-              className="bg-emerald-500 text-white text-sm px-4 py-2 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+              className="button-update bg-emerald-500 text-white text-sm px-4 py-2 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
               type="submit"
             >
               <IconUpdate className="w-6 inline-block pr-2" />

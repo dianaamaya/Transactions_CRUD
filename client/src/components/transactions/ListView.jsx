@@ -7,7 +7,6 @@ export function ListView ({
   handleUpdateButton,
   handleDeleteButton
 }) {
-  console.log('list rendering')
   return (
     <table className="border-spacing-6 border w-full">
       <thead className="hidden md:table-header-group">

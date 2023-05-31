@@ -5,7 +5,6 @@ import { ReactComponent as IconUpdate } from '../../assets/update.svg'
 import { ReactComponent as IconTrash } from '../../assets/trash.svg'
 
 export const GridViewItem = memo(function GridViewItem ({ transaction, handleUpdateButton, handleDeleteButton }) {
-  console.log('render', transaction.id)
   return (
     <div
           key={transaction.id}

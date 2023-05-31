@@ -7,7 +7,6 @@ import { ReactComponent as IconMenu } from '../assets/menu.svg'
 
 export function Header () {
   const [navbarOpen, setNavbarOpen] = useState(false)
-  console.log('render header')
 
   return (
     <header className="sticky top-0 bg-rose-800 text-white z-10">

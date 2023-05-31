@@ -7,7 +7,6 @@ export function GridView ({
   handleUpdateButton,
   handleDeleteButton
 }) {
-  console.log('grid rendering')
   return (
     <div className="grid sm:grid-clos-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {

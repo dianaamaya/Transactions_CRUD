@@ -40,8 +40,6 @@ export function Transactions () {
     setShowDeleteModal(true)
   }, [])
 
-  console.log('transactions rendering')
-
   return (
     <>
       <div className="flex justify-between items-center bg-neutral-100 rounded-md p-4 mb-8">

@@ -3,7 +3,6 @@ import { useTransactions } from '../../context/TransactionsContext'
 
 export function Balance () {
   const { transactions } = useTransactions()
-  console.log('render balance')
 
   const balance = useMemo(
     () =>

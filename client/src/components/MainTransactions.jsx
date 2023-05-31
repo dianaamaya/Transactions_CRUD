@@ -5,7 +5,6 @@ import { Filter } from './transactions/Filter'
 import { Transactions } from './transactions/Transactions'
 
 export function MainTransactions () {
-  console.log('render main transactions')
   return (
     <main className="px-8 py-12 max-w-5xl mx-auto">
       <div className="md:flex md:flex-row-reverse md:gap-12">

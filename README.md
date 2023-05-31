@@ -14,3 +14,10 @@ yarn install
 yarn start
 ```
 Now you can visit [http://localhost:3001](http://localhost:3001)
+
+## Testing client
+
+```
+yarn test:open - to see test in the interface (visual)
+yarn test:run - to run test on console
+```

@@ -24,12 +24,6 @@ public class Api {
     @Autowired
     TransactionService transactionService;
 
-    
-    @GetMapping("/saludar")
-    public String saludar() {
-        return "hi diana";
-    }
-
     @GetMapping("/all")
     public ArrayList<Transaction> getAllTransactions() {
         return transactionService.getAllTransactions();
