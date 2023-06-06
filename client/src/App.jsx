@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Header } from './components/Header'
 import { MainTransactions } from './components/MainTransactions'
 import { About } from './components/About'
+import { NoMatch } from './components/NoMatch'
 import { Footer } from './components/Footer'
 import { Toaster } from 'react-hot-toast'
 import { TransactionProvider } from './context/TransactionsContext'
@@ -22,6 +23,7 @@ function App () {
             }
           />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NoMatch />} />
         </Routes>
       </BrowserRouter>
       <Footer />

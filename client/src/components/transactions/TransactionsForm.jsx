@@ -40,13 +40,13 @@ export function TransactionsForm ({
 
   return (
     <>
-      {onModalUpdate
-        ? null
-        : (
-        <h2 className="block text-lg font-medium pb-6 text-center">
-          Add transaction
-        </h2>
-          )}
+      {
+        onModalUpdate
+          ? null
+          : (<h2 className="block text-lg font-medium pb-6 text-center">
+                Add transaction
+            </h2>)
+      }
 
       <form onSubmit={onSubmit}>
         <div className="md:flex md:items-center gap-3">
